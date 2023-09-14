@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.receipt-head{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 11px;
+}
+.receipt-head h4{
+    font-family: sans-serif;
+}
+
+.receipt-body{
+    width: 100%;
+}
+
+.receipt-voice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 13px;
+    border-top: solid 1px #efefef;
+}
+.receipt-voice h4{
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.receipt-voice p{
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.receipt-print{
+    padding: 13px 13px;
+    border-top: solid 1px #efefef;
+    text-align: center;
+}
+.receipt-print button{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: rgb(43, 122, 158);
+    padding: 6px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}

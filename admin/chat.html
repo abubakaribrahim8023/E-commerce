@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+const yArray = [55, 49, 44, 24, 15];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255,0.6)"}
+}];
+
+const layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
+</html> -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart Using Html Css Javascript</title>
+    <style>
+      #chart {
+      max-width: 650px;
+      margin: 35px auto;
+    }
+    </style>
+  </head>
+
+<body>
+    <div id="chart">
+    </div>
+
+<!-- JAVASCRIPT -->
+<script src="apentchat.js"></script>
+<script>
+  var options = {
+    chart: {
+        height: 280,
+        type: "area"
+    },
+    dataLabels: {
+        enabled: false
+    },
+    series: [
+        {
+            name: "Briatek Institude",
+            data: [15, 25, 38, 55, 69, 83, 99]
+        }
+    ],
+    fill: {
+        type: "gradient",
+        gradient: {
+            shadeIntensity: 4,
+            opacityFrom: 0.7,
+            opacityTo: 0.9,
+            stops: [0, 90, 100]
+        }
+    },
+    xaxis: {
+        categories: [
+            "01 Jan",
+            "02 Feb",
+            "03 March",
+            "04 April",
+            "05 May",
+            "06 June",
+            "07 July"
+        ]
+    }
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+chart.render();
+</script>
+</body>
+
+</html>
